@@ -10,7 +10,6 @@ const   addProduct = asyncHandler(async (req, res) => {
 
         // console.log("Request body:", req.body);
         
-
     // Validate required fields
     if (!name || !description || !price || !category || !color || !brand) {
         throw new ApiError(400, "All fields are required: name, description, price, category, color, and brand");

@@ -7,7 +7,7 @@ import { verifyAdmin } from "../middlewares/admin.middleware.js";
 const router = Router();
 
 // Public routes (no authentication required)
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.send("Server is running");
 });
 
